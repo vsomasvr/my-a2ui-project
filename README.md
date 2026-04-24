@@ -285,7 +285,6 @@ To
   ```py
   allow_origin_regex=r"(http://localhost:\d+|https://.*\.run\.app)",
   ```
-  ```
 
 ---
 
