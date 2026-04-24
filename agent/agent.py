@@ -147,7 +147,9 @@ class RestaurantAgent:
       self, schema_manager: Optional[A2uiSchemaManager] = None
   ) -> LlmAgent:
     """Builds the LLM agent for the restaurant agent."""
-    LITELLM_MODEL = os.getenv("LITELLM_MODEL", "gemini/gemini-2.5-flash")
+    is_vertex = os.getenv("GOOGLE_GENAI_USE_VERTEXAI") == "TRUE"
+    default_model = "vertex_ai/gemini-2.5-flash" if is_vertex else "gemini/gemini-2.5-flash"
+    LITELLM_MODEL = os.getenv("LITELLM_MODEL", default_model)
 
     instruction = (
         schema_manager.generate_system_prompt(
