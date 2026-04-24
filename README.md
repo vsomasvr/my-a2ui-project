@@ -36,6 +36,9 @@ cp -r ../a2ui/samples/agent/adk/restaurant_finder/. ./agent/
 
 # 5. Copy the React Client Shell
 cp -r ../a2ui/samples/client/react/shell/. ./client/
+
+# 6. copy the .gitignore and .geminiignore files
+cp ../a2ui/.gitignore ../a2ui/.geminiignore .
 ```
 
 You now have the baseline code. Now we must modify it to run independently and securely in the cloud.
