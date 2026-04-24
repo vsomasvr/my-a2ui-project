@@ -267,6 +267,7 @@ export function createBookingFormMessages(
               TextField: {
                 label: { literalString: 'Party Size' },
                 text: { path: '/partySize' },
+                // @ts-expect-error: The v0.8 type definition misses the property, but the UI component renders it
                 type: 'number',
               },
             },
@@ -275,6 +276,7 @@ export function createBookingFormMessages(
             id: 'datetime-field',
             component: {
               DateTimeInput: {
+                // @ts-expect-error: The v0.8 type definition misses the property, but the UI component renders it
                 label: { literalString: 'Date & Time' },
                 value: { path: '/reservationTime' },
                 enableDate: true,

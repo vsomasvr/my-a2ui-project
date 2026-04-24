@@ -53,5 +53,6 @@ export const config: AppConfig = {
     'Looking for open tables...',
     'Almost there...',
   ],
-  serverUrl: 'http://localhost:10002',
+  // Routes traffic through the BFF proxy to avoid CORS and securely handle identity tokens
+  serverUrl: import.meta.env.VITE_CLIENT_FACING_AGENT_BASE_URL || 'http://localhost:10002',
 };

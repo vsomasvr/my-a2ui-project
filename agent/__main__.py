@@ -48,11 +48,13 @@ def main(host, port):
             " is not TRUE."
         )
 
-    base_url = f"http://{host}:{port}"
+    # Set the client-accessible URL for the Agent Card to ensure proper frontend routing through proxies.
+    base_url = os.getenv("CLIENT_FACING_AGENT_BASE_URL", f"http://{host}:{port}")
+    logger.info(f"Agent Card base URL: {base_url}")
 
     agent = RestaurantAgent(base_url=base_url)
 
-    agent_executor = RestaurantAgentExecutor(agent)
+    agent_executor = RestaurantAgentExecutor(agent) 
 
     request_handler = DefaultRequestHandler(
         agent_executor=agent_executor,
@@ -67,7 +69,7 @@ def main(host, port):
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origin_regex=r"http://localhost:\d+",
+        allow_origin_regex=r"(http://localhost:\d+|https://.*\.run\.app)",
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
