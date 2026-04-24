@@ -24,7 +24,7 @@ wheels = [
 
 [[package]]
 name = "a2ui-agent-sdk"
-version = "0.1.1"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "a2a-sdk" },
@@ -32,9 +32,9 @@ dependencies = [
     { name = "google-genai" },
     { name = "jsonschema" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/08/a8/4094c52e8e5bea73cc80263bd004a85aa63be661ad1f10a86573296e30b0/a2ui_agent_sdk-0.1.1.tar.gz", hash = "sha256:a347e9d4bfa90611f1f7b5c9a2ad65e1dab0501377f1eb916962a5722b2df6c9", size = 228110, upload-time = "2026-03-31T23:40:37.072Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/31/7f/89ff7c4e1e88cab8d1b9a82fa8eb63e34770324689d72807e0ccab0ad1bd/a2ui_agent_sdk-0.1.2.tar.gz", hash = "sha256:bd95171f685349a492dd8958b0962377d94d295bd32c554a8e27e99adcc7f70b", size = 230118, upload-time = "2026-04-02T19:32:10.95Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ac/33/09a66b7581987b4ce1a479a9f1eeef91261ccb8ef5ebd4745f64ee414092/a2ui_agent_sdk-0.1.1-py3-none-any.whl", hash = "sha256:79d99cb46c2b709c42a1368a27996691d2a6fb8b7cc4f4efb73a04d002acc5e7", size = 71472, upload-time = "2026-03-31T23:40:38.256Z" },
+    { url = "https://files.pythonhosted.org/packages/cc/d0/1e562247e5ec267e3d07c8706f290c62554ca0abd3168fd06e68fb130a0a/a2ui_agent_sdk-0.1.2-py3-none-any.whl", hash = "sha256:b7be8e7c2f109eedc53786571e125162920ca78907d0c8a030f729f01abaa86b", size = 72232, upload-time = "2026-04-02T19:32:09.628Z" },
 ]
 
 [[package]]
@@ -55,7 +55,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "a2a-sdk", specifier = "==0.3.26" },
-    { name = "a2ui-agent-sdk", specifier = "==0.1.1" },
+    { name = "a2ui-agent-sdk", specifier = "==0.1.2" },
     { name = "click", specifier = "==8.1.8" },
     { name = "google-adk", specifier = "==1.28.0" },
     { name = "google-genai", specifier = "==1.64.0" },
@@ -1329,7 +1329,7 @@ wheels = [
 
 [[package]]
 name = "huggingface-hub"
-version = "1.11.0"
+version = "1.12.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -1342,9 +1342,9 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/dc/89/e7aa12d8a6b9259bed10671abb25ae6fa437c0f88a86ecbf59617bae7759/huggingface_hub-1.11.0.tar.gz", hash = "sha256:15fb3713c7f9cdff7b808a94fd91664f661ab142796bb48c9cd9493e8d166278", size = 761749, upload-time = "2026-04-16T13:07:39.73Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/56/52/1b54cb569509c725a32c1315261ac9fd0e6b91bbbf74d86fca10d3376164/huggingface_hub-1.12.0.tar.gz", hash = "sha256:7c3fe85e24b652334e5d456d7a812cd9a071e75630fac4365d9165ab5e4a34b6", size = 763091, upload-time = "2026-04-24T13:32:08.674Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/37/02/4f3f8997d1ea7fe0146b343e5e14bd065fa87af790d07e5576d31b31cc18/huggingface_hub-1.11.0-py3-none-any.whl", hash = "sha256:42a6de0afbfeb5e022222d36398f029679db4eb4778801aafda32257ae9131ab", size = 645499, upload-time = "2026-04-16T13:07:37.716Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/2b/ef03ddb96bd1123503c2bd6932001020292deea649e9bf4caa2cb65a85bf/huggingface_hub-1.12.0-py3-none-any.whl", hash = "sha256:d74939969585ee35748bd66de09baf84099d461bda7287cd9043bfb99b0e424d", size = 646806, upload-time = "2026-04-24T13:32:06.717Z" },
 ]
 
 [[package]]

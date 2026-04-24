@@ -26,7 +26,7 @@ dependencies = [
     "python-dotenv==1.1.0",
     "litellm==1.83.0",
     "jsonschema==4.23.0",
-    "a2ui-agent-sdk==0.1.1", 
+    "a2ui-agent-sdk==0.1.2", 
 ]
  
 [tool.hatch.build.targets.wheel]

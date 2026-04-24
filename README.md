@@ -62,7 +62,7 @@ dependencies = [
     "python-dotenv==1.1.0",
     "litellm==1.83.0",
     "jsonschema==4.23.0",
-    "a2ui-agent-sdk==0.1.1", 
+    "a2ui-agent-sdk==0.1.2", 
 ]
 ```
 
@@ -73,8 +73,8 @@ Open `client/package.json`. Change the `@a2ui/react` dependency to a published v
 **Change `dependencies and devDependencies` blocks to:**
 ```json
   "dependencies": {
-    "@a2a-js/sdk": "0.3.4",
-    "@a2ui/react": "0.9.1",
+    "@a2a-js/sdk": "0.3.13",
+    "@a2ui/react": "0.8.0", 
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "express": "5.2.1",
@@ -158,8 +158,8 @@ Open `client/package.json`. Change the `@a2ui/react` dependency to a published v
 **Change `dependencies` block to:**
 ```json
   "dependencies": {
-    "@a2a-js/sdk": "0.3.4",
-    "@a2ui/react": "0.9.1",
+    "@a2a-js/sdk": "0.3.13",
+    "@a2ui/react": "0.8.0", 
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "express": "5.2.1",
